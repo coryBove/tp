@@ -1,3 +1,5 @@
+// WORDS FROM https://en.wikibooks.org/wiki/Toki_Pona/WordTpEn
+
 var tokiPona =
 {
     "a": {

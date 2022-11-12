@@ -1,552 +1,413 @@
-// WORDS FROM https://en.wikibooks.org/wiki/Toki_Pona/WordTpEn
+// WORDS FROM: Toki Pona - The Language of Good - Sonja Lang
+// Hand-typed from my own personal copy
 
 var tokiPona =
 {
-    "a": {
-        "interj": "ah, ha, uh, ooh, aw, well (emotion word)"
+    "a or kin": {
+        "particle": "(emphasis, emotion, or confirmation)"
     },
     "akesi": {
-        "n": "non-cute animal, reptile, amphibian"
+        "noun": "non-cute animal; reptile, amphibian"
     },
     "ala": {
-        "mod": "no, not, none, un-",
-        "n": "nothing, negation, zero",
-        "interj": "no!"
+        "adjective": "no, not, zero"
     },
     "alasa": {
-        "vt": "gather, hunt"
+        "verb": "to hunt, forage"
     },
-    "ale, ali": {
-        "mod": "all, every, complete, whole",
-        "n": "everything, anything, life, the universe"
+    "ale or ali": {
+        "adjective": "all; abundant, countless, bountiful, every, plentiful",
+        "noun": "abundance, everything, life, universe",
+        "number": "100"
     },
     "anpa": {
-        "mod": "bottom, lower part, under, below, floor, beneath",
-        "n": "low, lower, bottom, down"
+        "adjective": "bowing down, downward, humble, lowly, dependent"
     },
     "ante": {
-        "conj": "otherwise, or else",
-        "mod": "different",
-        "n": "difference",
-        "vt": "change, alter, modify",
+        "adjective": "different, altered, changed, other"
     },
     "anu": {
-        "conj": "or"
+        "particle": "or"
     },
     "awen": {
-        "mod": "remaining, stationary, permanent, sedentary",
-        "vi": "stay, wait, remain",
-        "vt": "keep"
+        "adjective": "enduring, kept, protected, safe, waiting, staying",
+        "pre-verb": "to continue to"
     },
     "e": {
-        "sep": "(introduces a direct object)"
+        "particle": "(before the direct object)"
     },
     "en": {
-        "conj": "and (used to coordinate head nouns)"
+        "particle": "(between multiple subjects)"
     },
     "esun": {
-        "n": "market, shop"
+        "noun": "market, shop, fair, bazaar, business transaction"
     },
     "ijo": {
-        "mod": "of something",
-        "n": "thing, something, stuff, anything, object",
-        "vt": "objectify"
+        "noun": "thing, phenomenon, object, matter"
     },
     "ike": {
-        "interj": "oh dear! woe! alas!",
-        "mod": "bad, negative, wrong, evil, overly complex, (figuratively) unhealthy",
-        "n": "negativity, badness, evil",
-        "vi": "to be bad, to suck",
-        "vt": "to make bad, to worsen, to have a negative effect upon",
-        "misc": "[sounds like icky]"
+        "adjective": "bad, negative; non-essential, irrevelant" 
     },
     "ilo": {
-        "n": "tool, device, machine, thing used for a specific purpos"
+        "noun": "tool, implement, machine, device"
     },
     "insa": {
-        "mod": "inner, internal",
-        "n": "inside, inner world, centre, stomach",
-        "misc": "[inside]"
+        "noun": "centre, content, inside, between; internal organ, stomach"
     },
     "jaki": {
-        "inerj": "ew! yuck!",
-        "mod": "dirty, gross, filthy",
-        "n": "dirt, pullution, garbage, filth",
-        "vt": "pullute, dirty"
+        "adjective": "disgusting, obscene, sickly, toxic, unclean, unsanitary"
     },
     "jan": {
-        "mod": "human, somebody's, personal, of people",
-        "n": "person, people, human, being, somebody, anybody",
-        "vt": "personify, humanize, personalize"
+        "noun": "human being, person, somebody"
     },
     "jelo": {
-        "mod": "yellow, light green",
-        "misc": "[yellow]"
+        "adjective": "yellow, yellowish"
     },
     "jo": {
-        "n": "having",
-        "vt": "have, contain",
-        "misc": "kama receive, get, take, obtain"
+        "verb": "to have, carry, contain, hold"
     },
     "kala": {
-        "n": "fish, sea creature"
+        "noun": "fish, marine animal, sea creature"
     },
     "kalama": {
-        "n": "sound, noise, voice",
-        "vi": "make noise",
-        "vt": "sound, ring, play (an instrument)"
+        "verb": "to produce sound; recite, utter aloud"
     },
     "kama": {
-        "mod": "coming, future",
-        "n": "event, happening, chance, arrival, beginning",
-        "vi": "come, become, arrive, happen, pursue actions to arrive to (a certain state), manage to, start to",
-        "vt": "bring about, summon",
-        "misc": "[come up]"
+        "adjective": "arriving, coming, future, summoned",
+        "pre-verb": "to become, manage to, suceed in"
     },
     "kasi": {
-        "n": "plant, leaf, herb, tree, wood"
+        "noun": "plant, vegetation; herb, leaf"
     },
     "ken": {
-        "cont": "it is possible that",
-        "n": "possibility, ability, power to do things, permission",
-        "vi": "can, is able to, is allowed to, may, is possible",
-        "vt": "make possible, enable, allow, permit",
+        "pre-verb": "to be able to, be allowed to, can, may",
+        "adjective": "possible"
     },
     "kepeken": {
-        "prep": "with",
-        "vt": "use"
+        "preposition": "to use, with, by means of"
     },
     "kili": {
-        "n": "fruit, pulpy vegetable, mushroom"
-    },
-    "kin": {
-        "mod": "also, too, even, indeed (emphasizes the word(s) before it)"
-    },
-    "kipisi": {
-        "misc": "(yet undefined entry in the official word list)"
+        "noun": "fruit, vegetable, mushroom"
     },
     "kiwen": {
-        "mod": "hard, solid, stone-like, made of stone or metal",
-        "n": "hard thing, rock, stone, metal, mineral, clay"
+        "noun": "hard object, metal, rock, stone"
     },
     "ko": {
-        "n": "semi-solid or squishy substance, e.g. paste, powder, gum"
+        "noun": "clay, clinging form, dough, semi-solid, paste, powder"
     },
     "kon": {
-        "mod": "air-like, ethereal, gaseous",
-        "n": "air, wind, smell, soul"
+        "noun": "air, breath; essence, spirit; hidden reality, unseen agent"
     },
     "kule": {
-        "mod": "colourful",
-        "n": "colour, paint",
-        "vt": "colour, paint"
+        "adjective": "colorful, pigmented, painted"
     },
     "kulupu": {
-        "mod": "communal, shared, public, of the society",
-        "n": "group, community, society, company, people"
+        "noun": "community, company, group, nation, society, tribe"
     },
     "kute": {
-        "mod": "auditory, hearing",
-        "vt": "listen, hear"
+        "noun": "ear",
+        "verb": "to hear, listen; pay attention to, obey"
     },
     "la": {
-        "sep": "(between adverb or phrase of context and sentence)"
+        "particle": "between the context phrase and the main sentence"
     },
     "lape": {
-        "mod": "sleeping, of sleep",
-        "n": "sleep, rest",
-        "vi": "sleep, rest"
+        "adjective": "sleeping, resting"
     },
     "laso": {
-        "mod": "blue, green"
+        "adjective": "blue, green"
     },
     "lawa": {
-        "mod": "main, leading, in charge",
-        "n": "head, mind",
-        "vt": "lead, control, rule, steer"
+        "noun": "head, mind",
+        "verb": "to control, direct, guide, lead, own, plan, regulate, rule"
     },
     "len": {
-        "n": "clothing, cloth, fabric"
+        "noun": "cloth, clothing, fabric, textile; cover, layer of privacy"
     },
     "lete": {
-        "mod": "cold, uncooked",
-        "n": "cold",
-        "vt": "cool down, chill"
+        "adjective": "cold, cool; uncooked, raw"
     },
     "li": {
-        "sep": "(between any subject except mi and sina and its verb; also used to introduce a new verb for the same subject)"
+        "particle": "between any subject except mi alone or sina alone and its verb; also to introduce a new verb for the same subject"
     },
     "lili": {
-        "mod": "small, little, young, a bit, short, few, less",
-        "vt": "reduce, shorten, shrink, lessen"
+        "adjective": "little, small, short; few; a bit; young"
     },
     "linja": {
-        "n": "long, very thin, floppy thing, e.g. string, rope, hair, thread, cord, chain"
+        "noun": "long and flexible thing; cord, hair, rope, thread, yarn"
     },
     "lipu": {
-        "n": "flat and bendable thing, e.g. paper, card, ticket"
+        "noun": "flat object; book, document, card, paper, record, website"
     },
     "loje": {
-        "mod": "red"
+        "mod": "red, reddish"
     },
     "lon": {
-        "prep": "be (located) in/at/on",
-        "vi": "be there, be present, be real/true, exist, be awake"
+        "preposition": "located at, present at, real, true, existing"
     },
     "luka": {
-        "n": "hand, arm"
+        "noun": "arm, hand, tactile organ"
     },
-    "lukin": {
-        "mod": "visual(ly)",
-        "vi": "look, watch out, pay attention",
-        "vt": "see, look at, watch, read",
-        "misc": "[looking]"
+    "lukin or oko": {
+        "noun": "eye",
+        "verb": "to look at, see, examine, observe, read, watch",
+        "pre-verb": "to seek, look for, try to" 
     },
     "lupa": {
-        "n": "hole, oriface, window, door",
-        "misc": "[sounds like loop]"
+        "noun": "door, hole, orifice, window"
     },
     "ma": {
-        "n": "land, earth, country, (outdoor) area"
+        "noun": "earth, land; outdoors, world; country, territory; soil"
     },
     "mama": {
-        "mod": "of the parent, parental, maternal, fatherly",
-        "n": "parent, mother, father",
-        "misc": "[sounds like momma]"
+        "noun": "parent, ancestor; creator, originator; caretaker, sustainer"
     },
     "mani": {
-        "n": "money, material wealth, currency, dollar, capital",
-        "misc": "[money]"
+        "noun": "money, cash, savings, wealth; large domesticated animal"
     },
     "meli": {
-        "mod": "female, feminine, womanly",
-        "n": "woman, female, girl, wife, girlfriend",
-        "misc": "[Mary]"
+        "noun": "woman, female, feminine person; wife"
     },
     "mi": {
-        "mod": "my, our",
-        "n": "I, we",
-        "misc": "[me]"
+        "noun": "I, me, we, us"
     },
     "mije": {
-        "mod": "male, masculine, manly",
-        "n": "man, male, boy, husband, boyfriend"
+        "noun": "man, male, masculine person; husband"
     },
     "moku": {
-        "n": "food, meal",
-        "vt": "eat, drink, swallow, ingest, consume"
+        "verb": "to eat, drink, consume, swallow, ingest"
     },
     "moli": {
-        "mod": "dead, deadly, fatal",
-        "n": "death",
-        "vi": "die, be dead",
-        'vt': "kill",
+        "adjective": "dead, dying"
     },
     "monsi": {
-        "mod": "back, rear",
-        "n": "back, rear ends, butt, behind"
+        "noun": "back, behind, rear"
     },
     "mu": {
-        "interj": "woof! meow! moo! etc. (cute animal noise)",
-        "misc": "[moo]"
+        "particle": "(animal noise or communication"
     },
     "mun": {
-        "mod": "lunar",
-        "n": "moon",
-        "misc": "[moon]"
+        "noun": "moon, night sky object, star"
     },
     "musi": {
-        "mod": "artful, fun, recreational",
-        "n": "fun, playing, game, recreation, art, entertainment",
-        "vi": "play, have fun",
-        "vt": "amuse, entertain"
+        "adjective": "artistic, entertaining, frivolous, playful, recreational"
     },
     "mute": {
-        "mod": "many, very, much, several, a lot, abundant, numerous, more",
-        "n": "amount, quantity",
-        "vt": "make many or much",
-        "misc": "[multi]"
-    },
-    "namako": {
-        "n": "food additive, accessory, something extra",
-        "vt": "season, embellish, stimulate"
+        "adjective": "many, a lot, more, much, several, very",
+        "noun": "quantity"
     },
     "nanpa": {
-        "n": "number",
-        "oth": "-th (ordinal numbers)",
-        "misc": "[number]"
+        "particle": "-th (ordinal number)",
+        "noun": "numbers"
     },
     "nasa": {
-        "mod": "silly, crazy, foolish, drunk, strange, stupid, weird",
-        "vt": "drive crazy, make weird"
+        "adjective": "unusual, strange; foolish, crazy; drunk, intoxicated"
     },
     "nasin": {
-        "n": "way, manner, custom, road, path, doctrine, system, method"
+        "noun": "way, custom, doctrine, method, path, road"
     },
     "nena": {
-        "n": "bump, nose, hill, mountain, button"
+        "noun": "bump, button, hill, mountain, nose, protuberance"
     },
     "ni": {
-        "mod": "this, that"
+        "adjective": "that, this"
     },
     "nimi": {
-        "n": "word, name"
+        "noun": "name, word"
     },
     "noka": {
-        "n": "leg, foot"
+        "noun": "foot, leg, organ of locomotion; bottom, lower part"
     },
     "o": {
-        "interj": "hey! (calling somebody's attention)",
-        "sep": "O (vocative or imperative)"
-    },
-    "oko": {
-        "n": "eye",
-        "misc": "[similar to oculist]"
+        "particle": "hey! O! (vocative or imperative)"
     },
     "olin": {
-        "mod": "love",
-        "n": "love",
-        "vt": "to love (a person)"
+        "verb": "to love, have compassion for, respect, show affection to"
     },
     "ona": {
-        "mod": "her, his, its, their",
-        "n": "she, he, it, they"
+        "noun": "he, she, it, they"
     },
     "open": {
-        "vt": "open, turn on"
+        "verb": "to begin, start; open; turn on"
     },
     "pakala": {
-        "interj": "damn! fuck!",
-        "n": "blunder, accident, mistake, destruction, damage, breaking",
-        "vt": "screw up, fuck up, botch, ruin, break, hurt, injure, damage, spoil, ruin",
-        "vi": "screw up, fall apart, break"
+        "adjective": "botched, broken, damaged, harmed, messed up"
     },
     "pali": {
-        "mod": "active, work-related, operating, working",
-        "n": "activity, work, deed, project",
-        "vi": "act, work, function",
-        "vt": "do, make, build, create"
+        "verb": "to do, take action on, work on; build, make, prepare"
     },
     "palisa": {
-        "n": "long, mostly hard object, e.g. rod, stick, branch"
+        "noun": "long hard thing; branch, rod, stick"
     },
     "pan": {
-        "n": "grain, cereal"
+        "noun": "cereal, grain; barley, corn, oat, rice, wheat; bread, pasta"
     },
     "pana": {
-        "n": "giving, transfer, exchange",
-        "vt": "give, put, send, place, release, emit, cause"
+        "verb": "to give, send, emit, provide, put, release"
     },
     "pi": {
-        "sep": "of, belonging to"
+        "particle": "of"
     },
     "pilin": {
-        "n": "feelings, emotion, heart",
-        "vi": "feel",
-        "vt": "feel, think, sense, touch",
-        "misc": "[feeling]"
+        "noun": "heart (physical or emotional)",
+        "adjective": "feeling (an emotion, a direct experience"
     },
     "pimeja": {
-        "mod": "black, dark",
-        "n": "darkness, shadows",
-        "vt": "darken"
+        "adjective": "black, dark, unlit"
     },
     "pini": {
-        "mod": "completed, finished, past, done, ago",
-        "n": "end, tip",
-        "vt": "finish, close, end, turn off"
+        "adjective": "ago, completed, ended, finished, past"
     },
     "pipi": {
-        "n": "bug, insect, spider"
+        "noun": "bug, insect, ant, spider"
     },
     "poka": {
-        "mod": "neighbouring",
-        "n": "side, hip, next to",
-        "prep": "in the accompaniment of, with"
+        "noun": "hip, side; next to, nearby, vicinity"
     },
     "poki": {
-        "n": "container, box, bowl, cup, glass",
-        "misc": "[box]"
+        "noun": "container, bab, bowl, box, cup, cupboard, drawer, vessel"
     },
     "pona": {
-        "interj": "great! good! thanks! OK! cool! yay!",
-        "mod": "good, simple, positive, nice, correct, right",
-        "n": "good, simplicity, positivity",
-        "vt": "improve, fix, repair, make good",
-        "misc": "[bonam]"
+        "adjective": "good, positive, useful; friendly, peaceful; simple"
     },
     "pu": {
-        "misc": "(yet undefined entry in the official word list)"
+        "adjective": "interacting with the official Toki Pona book"
     },
     "sama": {
-        "mod": "same, similar, equal, of equal status or position",
-        "prep": "like, as, seem"
+        "adjective": "same, similar; each other; sibling, peer, fellow"
     },
     "seli": {
-        "mod": "hot, warm, cooked",
-        "n": "fire, warmth, heat",
-        "vt": "heat, warm up, cook"
+        "adjective": "fire; cooking element, chemical reaction, heat source"
     },
     "selo": {
-        "n": "outside, surface, skin, shell, bark, shape, peel"
+        "noun": "outer form, outer layer; bark, peel, shell, skin; boundary"
     },
     "seme": {
-        "oth": "what, which, wh- (question word)"
+        "particle": "what? which?"
     },
     "sewi": {
-        "mod": "superior, elevated, religious, formal",
-        "n": "high, up, above, top, over, on"
+        "noun": "area above, highest part, something elevated",
+        "adjective": "awe-inspiring, divine, sacred, supernatural"
     },
-
     "sijelo": {
-        "n": "body, physical state"
+        "noun": "body (of a person or animal), physical state, torso"
     },
     "sike": {
-        "mod": "round, cyclical",
-        "n": "circle, wheel, sphere, ball, cycle"
+        "noun": "round or circular thing; ball, circle, cycle, sphere, wheel",
+        "adjective": "of one year"
     },
-    "sin": {
-        "mod": "new, fresh, another, more",
-        "vt": "renew, renovate, freshen"
+    "sin or namako": {
+        "adjective": "new, fresh; additional, another, extra"
     },
     "sina": {
-        "mod": "your",
-        "n": "you"
+        "noun": "you"
     },
     "sinpin": {
-        "n": "front, chest, torso, face, wall"
+        "noun": "face, foremost, front, wall"
     },
     "sitelen": {
-        "n": "picture, image",
-        "vt": "draw, write"
+        "noun": "image, picture, representation, symbol, mark, writing"
     },
     "sona": {
-        "n": "knowledge, wisdom, intelligence, understanding",
-        "vi": "know, understand",
-        "vt": "know, understand, know how to",
-        "misc": "kama learn, study"
+        "verb": "to know, be skilled in, be wise about, have information on",
+        "pre-verb": "to know how to"
     },
     "soweli": {
-        "n": "animal, especially land mammal, lovable animal"
+        "noun": "animal, beast, land mammal"
     },
     "suli": {
-        "mod": "big, tall, long, adult, important",
-        "n": "size",
-        "vt": "enlarge, lengthen"
+        "adjective": "big, heavy, large, long, tall; important; adult"
     },
     "suno": {
-        "n": "sun, light"
+        "noun": "sun; light, brightness, glow, radiance, shine; light source"
     },
     "supa": {
-        "n": "horizontal surface, e.g furniture, table, chair, pillow, floor"
+        "noun": "horizontal surface, thing to put or rest something on"
     },
     "suwi": {
-        "mod": "sweet, cute",
-        "n": "candy, sweet food",
-        "vt": "sweeten",
-        "misc": "[sweet]"
+        "adjective": "sweet, fragrant; cute, innocent, adorable"
     },
     "tan": {
-        "n": "origin, cause",
-        "prep": "from, by, because of, since"
+        "preposition": "by, from, because of"
     },
     "taso": {
-        "conj": "but",
-        "mod": "only, sole",
-        "misc": "[that's all]"
+        "particle": "but, however",
+        "adjective": "only"
     },
     "tawa": {
-        "mod": "moving, mobile",
-        "n": "movement, transportation",
-        "prep": "to, in order to, towards, for, until",
-        "vi": "go to, walk, travel, move, leave",
-        "vt": "move, displace",
-        "misc": "[towards]"
+        "preposition": "going to, toward; for; from the perspective of",
+        "adjective": "moving"
     },
-
     "telo": {
-        "n": "water, liquid, juice, sauce",
-        "vt": "water, wash with water"
+        "noun": "water, liquid, fluid, wet substance; bevereage"
     },
-
     "tenpo": {
-        "n": "time, period of time, moment, duration, situation"
+        "noun": "time, duration, moment, occasion, period, situation"
     },
-
     "toki": {
-        "interj": "hello! hi!",
-        "mod": "talking, verbal",
-        "n": "language, talking, speech, communication",
-        "vi": "talk, chat, communicate",
-        "vt": "say"
+        "verb": "to communicate, say, speak, say, talk, use language, think"
     },
     "tomo": {
-        "mod": "urban, domestic, household",
-        "n": "indoor constructed space, e.g. house, home, room, building"
+        "noun": "indoor space; building, home, house, room"
     },
     "tu": {
-        "mod": "two",
-        "n": "duo, pair",
-        "vt": "double, separate/cut/divide in two",
-        "misc": "[two]"
+        "number": "two"
     },
     "unpa": {
-        "mod": "erotic, sexual",
-        "n": "sex, sexuality",
-        "vi": "have sex",
-        "vt": "have sex with, sleep with, fuck"
+        "verb": "to have sexual or marital relations with"
     },
     "uta": {
-        "mod": "oral",
-        "n": "mouth"
+        "noun": "mouth, lips, oral cavity, jaw"
     },
     "utala": {
-        "n": "conflict, disharmony, competition, fight, war, battle, attack, blow, argument, physical or verbal violence",
-        "vt": "hit, strike, attack, compete against"
+        "verb": "to battle, challenge, compete against, struggle against"
     },
     "walo": {
-        "mod": "white, light (colour)",
-        "n": "white thing or part, whiteness, lightness",
-        "misc": "[sounds like wall, which is often white]"
+        "adjective": "white, whitish; light-colored, pale"
     },
     "wan": {
-        "mod": "one, a",
-        "n": "unit, element, particle, part, piece",
-        "vt": "unite, make one",
-        "misc": "[one]"
+        "adjective": "unique, united",
+        "number": "one"
     },
     "waso": {
-        "n": "bird, winged animal"
+        "noun": "bird, flying creature, winged animal"
     },
     "wawa": {
-        "mod": "energetic, strong, fierce, intense, sure, confident",
-        "n": "energy, strength, power",
-        "vt": "strengthen, energize, empower"
+        "adjective": "strong, powerful; confident, sure; energetic intense"
     },
     "weka": {
-        "mod": "away, absent, missing",
-        "n": "absence",
-        "vt": "throw away, remove, get rid of"
+        "adjective": "absent, away, ignored"
     },
     "wile": {
-        "mod": "necessary",
-        "n": "desire, need, will",
-        "vt": "to want, need, wish, have to, must, will, should"
+        "pre-verb": "must, need, require, should, want, wish"
     }
 }
 
-function processClick() {
-    var ijo = Object.keys(tokiPona);
-    var toki = ijo[Math.floor(Math.random() * ijo.length)];
+// https://stackoverflow.com/a/3719011
+function randomize(a, b) {
+    return Math.random() - 0.5;
+}
+
+var ijo = Object.keys(tokiPona);
+ijo.sort(randomize);
+
+var i = 0;
+
+function processClick() {    
+    var toki = ijo[i++]
     var ilo = tokiPona[toki];
-    $("#toki").html("<div class='text-center' style='font-size:64px;'><strong>" + toki + "</strong></div><hr>");
+    $("#toki").html
+    (   "<div class='text-center' style='font-size:16px;'>" + i + "/120</div><hr>" +
+        "<div class='text-center' style='font-size:64px;'><strong>" + toki + "</strong></div><hr>"
+        );
     var def = "<ul class='list-group'>";
     for(var x in ilo) {
         def += "<li class='list-group-item'><em>" + x + ".</em> " + ilo[x] + "</li>";
     }
     def += "</ul>"
-    $("#toki").html("<div class='text-center' style='font-size:64px;'><strong>" + toki + "</strong></div><hr>");
     $("#def").html(def);
-}
 
-processClick();
+    if(i == 120) {
+        i = 0;
+    }
+}
